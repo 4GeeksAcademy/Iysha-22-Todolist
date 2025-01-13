@@ -5,6 +5,18 @@ body {
 
 }
 
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ff0000; /* Agregamos el color rojo */
+
+}
+
 #nueva-tarea {
     width: 100%;
     padding: 10px;
