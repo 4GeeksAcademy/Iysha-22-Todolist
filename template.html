@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todolist</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Lista de tareas</h1>
-    <p>Cosas importantes!!!</p>
-    <input type="text" id="nueva-tarea" placeholder="Añadir tarea">
-    <ul id="lista-tareas"></ul>
+    <div class="container">
+        <h1>Gestor de Tareas</h1>
+        <input type="text" id="taskInput" placeholder="Añadir nueva tarea...">
+        <ul id="taskList">
+            <li class="empty-message">No hay tareas, añadir tareas</li>
+        </ul>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

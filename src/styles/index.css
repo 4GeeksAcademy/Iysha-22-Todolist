@@ -1,69 +1,52 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    text-align: center; /* Centra el contenido del cuerpo */
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
 
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+  text-align: center;
 }
 
-p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #ff0000; /* Agregamos el color rojo */
-
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-#nueva-tarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 18px;
-    border: 1px solid #ccc;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-#lista-tareas {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+li {
+  padding: 10px;
+  background: #e2e2e2;
+  margin-bottom: 10px;
+  position: relative;
 }
 
-.tarea {
-    padding: 10px;
-    text-align: left; /* Ajusta el texto de la tarea a la izquierda */
-    border-bottom: 1px solid #ccc;
-    transition: background-color 0.2s ease;
+li:hover .delete-btn {
+  display: inline;
 }
 
-.tarea:hover {
-    background-color: #f0f0f0;
+.delete-btn {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  color: red;
 }
-
-.tarea:hover .eliminar {
-    display: block;
-}
-
-.eliminar {
-    display: none;
-    float: right;
-    cursor: pointer;
-}
-
-.sin-tareas {
-    padding: 10px;
-    text-align: center;
-    color: #666;
-}
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
